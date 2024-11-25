@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Italiana&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+}
+
+.background-image {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: url('blue.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    /* background: linear-gradient(135deg, #d3d3d3, #f1f1f1); */
+    background: linear-gradient(to right, #d8e6f2, #a2d4f8);
+    border-radius: 0px 0px 50px 50px;
+    padding: 2px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+img {
+    height: 80px;
+    position: absolute;
+    left: 180px;
+    top: 13px;
+}
+
+.name {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 270px;
+    top: 35px;
+}
+
+.name p {
+    font-size: 25px;
+    color: black;
+    margin: 0;
+    font-family: "Italiana", sans-serif;
+}
+
+nav ul {
+    list-style: none;
+    position: fixed;
+    top: 200px;  
+    right: 2px;   
+    background: linear-gradient(135deg, #d3d3d3, #f1f1f1); 
+    padding: 30px;
+    margin: 0;
+    line-height: 2.0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);  
+}
+
+nav ul li {
+    margin: 10px 0;  
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ad2323;
+}
+
+@keyframes shine {
+    0% {
+        background-position: -100%;
+    }
+    100% {
+        background-position: 200%;
+    }
+}
+.M2 button {
+    background: linear-gradient(135deg, #f0f0f0, #d3d3d3, #f0f0f0); 
+    background-size: 200% 100%; 
+    color: #333;
+    border: none;
+    border-radius: 30px;
+    font-weight: bold;
+    padding: 15px; 
+    transition: transform 0.3s, background 0.5s;
+    left: 1200px;
+    top:29px;
+    position: absolute;
+    animation: shine 2s infinite linear; 
+}
+.welcome-box {
+    background-color: rgba(241, 241, 241, 0.9);
+    padding: 70px;
+    border-radius: 30px;
+    text-align: center;
+    width: auto;
+    box-shadow: 10px 10px 5px rgb(3, 53, 139);
+    position: absolute;
+    top: 30vh;
+    right: 10vw;
+    margin: 0;
+    z-index: 1;
+    margin-right: 50px;
+    line-height: 1.3;
+}
+
+.welcome {
+    margin-top: 0;
+    font-size: 28px;
+    color: #333;
+}
+
+.nucaza {
+    font-size: 38px;
+    color: #3498db;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.search-result {
+    font-size: 18px;
+    margin-top: 8px;
+    color: #333;
+}
+
+.side-image {
+    position: absolute;
+    top: 75px;
+    left: 400px;
+    width: 90px;
+    height: auto;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #0f2592;
+    border-radius: 20px;
+}
+
+body::-webkit-scrollbar-track {
+    background: rgb(213, 221, 236);
+}
+.box {
+    padding: 80px;
+    width: 70%;
+    height: 400px;
+    margin-left: 230px;
+    /* margin: -20px 0 90px 0;  */
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    color: black;
+    background-image: url('https://e0.pxfuel.com/wallpapers/672/282/desktop-wallpaper-light-blue-pastel-gradient.jpg'); 
+    background-size:  cover;
+    background-position:  center;
+    background-repeat: no-repeat;
+    box-shadow:  0 8px 30px rgb(94, 88, 88);
+}
+
+.box h2 {
+    color: #121111d2;
+    justify-content: center;
+    display: flex;
+}
+
+#about .box p {
+    margin: 10px;
+    line-height: 1.6;
+    color: #333;
+}
+
+#about h2{
+    margin: -20px;
+}
+
+.box a {
+    color: rgba(206, 10, 23, 0.76); 
+    text-decoration: underline; 
+}
+
+#contact h2{
+    margin: -20px;
+}
+
+.contact-list {
+    list-style-type: none; 
+    padding: 0; 
+    margin-left: 50px;
+    color: black;
+}
+
+.contact-list li {
+    margin-bottom: 30px; 
+}
+
+.box a:hover {
+    color: rgb(146, 51, 214);
+    text-decoration: none;
+}
+
+#skills .box h2 {
+    color: black    ;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#skills .skills-list {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+#skills .skills-list li {
+    font-size: 18px;
+    color: #333;
+    font-weight: 500;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+
+#skills .skills-list li::before {
+    content: "✨"; 
+    font-size: 20px;
+    line-height: 1.5;
+    margin-top: 1px;
+}
+
+#skills .box a {
+    position: absolute;
+    left: 15px;
+    top: 10px;
+    text-decoration: none;
+    color: #1c1717;
+}
+#projects {
+    text-align: center;
+    width: 70%;
+}
+
+#projects h2 {
+    font-size: 36px;
+    margin-top: 90px;
+    top: -20px;
+    color: #080303;
+    font-family: "Roboto", sans-serif;
+    position: relative;      
+    left: 70%;               
+    transform: translateX(-50%);
+}
+
+.arrow {
+    font-size: 30px;
+    font-weight: bold;
+    color: #0077b5;
+    transition: transform 0.3s ease;
+}
+
+.portfolio-gallery {
+    display: flex;
+    flex-direction: column; 
+    gap: 40px; 
+    /* margin-top: 20px; */
+    align-items: center;
+    position: relative;
+    left: 200px;
+}
+
+.portfolio-item {
+    width: 100%;  
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-decoration: none;
+    background-color: #f0f0f0;
+    color: #333;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.portfolio-item h3 {
+    font-size: 22px;
+    margin: 15px;
+    color: #333;
+}
+
+.portfolio-item p {
+    font-size: 16px;
+    margin: 0 15px 15px;
+    color: #666;
+    line-height: 1.6;
+}
+.cv-download-container {
+    position: absolute;
+    left: 1010px;
+    padding: 20px 60px; 
+    background-color: #b54bcfb0;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 16px;
+    width: 70px;
+    top: 420px;
+    z-index: 2;
+}
+
+.cv-download-btn {
+    color: white;
+    text-decoration: none;
+    position: absolute;
+}
+.cv-download-btn {
+    color: white;
+}
+
+
+.declare {
+    position: relative;
+    bottom: 90px;
+    width: 100%;
+    text-align: center; 
+    font-size: 13px; 
+    color: #1c1717; 
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: auto;
+}
+
+footer p {
+    margin: 5px;
+}
+
+footer a {
+    color: #11c5cb;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: antiquewhite;
+}
+
+#about{
+    margin-top: 800px; 
+    /* margin-bottom: 100px;  */
+}   
